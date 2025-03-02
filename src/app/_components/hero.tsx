@@ -22,7 +22,7 @@ export function Hero() {
                 <div className="absolute inset-0 bg-black opacity-60 md:hidden"></div>
             </div>
 
-            <div className="container mx-auto pt-10 pb-10 lg:pt-0 lg:pb-0 md:pb-0 px-4 relative h-[448px] md:h-[600px] lg:h-[700px]">
+            <div className="container mx-auto pt-10 pb-10 lg:pt-0 lg:pb-0 md:pb-0 px-4 relative h-[500px] md:h-[600px] lg:h-[700px]">
 
                 <article className="grid grid-cols-1 lg:grid-cols-2 gap-8 h-[100%]">
 
