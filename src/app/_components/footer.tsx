@@ -46,28 +46,28 @@ function Footer() {
                 </div>
 
                 <footer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12 mt-5">
-                        <div>
+                        <div className="flex flex-col gap-2">
                             <h3 className="text-2xl font-semibold mb-2">Pet shop</h3>
-                            <p className="mb-4">Cuidando do seu melhor amigo com amor e dedicação</p>
+                            <p className="font-semibold">Cuidando do seu melhor amigo com amor e dedicação</p>
 
                             <a 
                                 href={`https://wa.me/5521992117045?text=Olá vim pelo site e gostaria de mais informações`}
                                 target="_blank"
-                                className="bg-green-500 px-4 py-2 rounded-md"
+                                className="bg-green-500 w-[50%] px-2 py-2 rounded-md text-center"
                             >
                                 Contato via WhatsApp
                             </a>
                         </div>
 
-                        <div>
+                        <div className="flex flex-col gap-2">
                             <h3 className="text-2xl font-semibold mb-2">Contatos</h3>
-                            <p className="mb-4">Email: pet@gmail.com</p>
+                            <p className="font-semibold">Email: pet@gmail.com</p>
 
-                            <p>
+                            <p className="font-semibold">
                                 Telefone: (21) 992117045
                             </p>
 
-                            <p>Rua x, centro, Rio de janeiro</p>
+                            <p className="font-semibold">Rua x, centro, Rio de janeiro</p>
                         </div>
 
                         <div>

@@ -8,27 +8,27 @@ import Image from "next/image"
 export function Hero() {
     return (
 
-        <section className="bg-[#009CA6] text-white relative overflow-hidden">
+        <section className="bg-[#009CA6] text-white relative overflow-hidden lg:h-[700px]">
 
             <div>
                 <Image 
                     src={dogImg}
                     alt="Foto do cachorro"
                     fill
-                    sizes="100vw"
+                    sizes="100vh"
                     priority
                     className="object-cover opacity-60 lg:hidden"
                 />
-                <div className="absolute inset-0 bg-black opacity-40 md:hidden"></div>
+                <div className="absolute inset-0 bg-black opacity-60 md:hidden"></div>
             </div>
 
-            <div className="container mx-auto pt-16 pb-16 md:pb-0 px-4 relative">
+            <div className="container mx-auto pt-10 pb-10 lg:pt-0 lg:pb-0 md:pb-0 px-4 relative h-[448px] md:h-[600px] lg:h-[700px]">
 
-                <article className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <article className="grid grid-cols-1 lg:grid-cols-2 gap-8 h-[100%]">
 
-                    <div className="space-y-6">
+                    <div className="space-y-6 flex flex-col justify-center">
                         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-10" data-aos="fade-down">Seu pet merece cuidado, carinho e atenção especial</h1>
-                        <p className="lg:text-lg" data-aos="fade-right">Oferecemos os melhores serviços para garantir o bem-estar e a felicidade do seu amigo de quatro patas</p>
+                        <p className="lg:text-lg w-[70%]" data-aos="fade-right">Oferecemos os melhores serviços para garantir o bem-estar e a felicidade do seu amigo de quatro patas</p>
 
                         
                         <a 
@@ -50,7 +50,7 @@ export function Hero() {
                             </p>
 
                             <div className="flex mt-4">
-                                <div className="w-32 hidden lg:block">
+                                <div className="w-32">
                                     {/* <Image 
                                         src={catImg}
                                         alt="Foto do gato"
@@ -64,13 +64,13 @@ export function Hero() {
                         
                     </div>
                     
-                    <div className="hidden md:block h-full relative">
+                    <div className="hidden md:none lg:flex h-full relative">
                         <Image 
                             src={dogImg}
                             alt="Foto do dog"
-                            className="object-contain"
+                            className="object-cover"
                             fill
-                            sizes="(max-width: 768px) 0vw, 50vw"
+                            sizes="(max-width: 768px) 0vw, 100vh"
                             quality={100}
                             priority
                         />

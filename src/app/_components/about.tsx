@@ -6,10 +6,11 @@ import about3Img from "../../../public/aboutSimple.png"
 import about4Img from "../../../public/gatoabout.jpg"
 import { Check, MapPin } from "lucide-react";
 import { WhatsappLogo } from "@phosphor-icons/react/dist/ssr";
+import { FaPaw } from "react-icons/fa6";
 
 export function About() {
     return (
-        <main className="py-16">
+        <main className="py-16 ">
             <div className="container px-4 mx-auto">
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -31,8 +32,9 @@ export function About() {
                         </div>
                     </div>
                     
-                    <div className="space-y-6 mt-10" data-aos="fade-up-left" data-aos-delay="500">
-                        <h2 className="text-4xl font-bold">SOBRE</h2>
+                    <div className="space-y-6 mt-0" data-aos="fade-up-left" data-aos-delay="500">
+                        <h2 className="text-2xl font-bold flex items-center gap-1">Sobre <FaPaw /></h2>
+                        <h2 className="text-4xl font-bold">Nós fornecemos os melhores serviços de cuidados com animais de estimação</h2>
 
                         <p>
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid tempora ad unde adipisci quis fugiat est atque minus ab quibusdam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates veniam maxime asperiores, dolorem laudantium nesciunt dolores provident tenetur. Nam, eligendi eveniet voluptates vero nulla sed reprehenderit eos, alias rem temporibus vel magni. Accusamus dolor nam incidunt consectetur aperiam inventore quos.

@@ -53,16 +53,17 @@ export function Testimonials() {
                 <div>
                     <h2 className="text-4xl font-bold mb-12 text-center text-white">Depoimentos dos nossos clientes</h2>
 
-                    <div className="relative max-w-4xl mx-auto">
+                    <div className="relative max-w-4xl mx-auto ">
 
                         <div className="overflow-hidden" ref={emblaRef}>
 
                             <div className="flex">
                                 {testimonials.map((item, index) => (
                                     <div key={index} className="flex-[0_0_100%] min-w-0 px-3">
-                                        <article className="bg-[#1e293b] text-white rounded-2xl p-6 space-y-4 h-full flex flex-col">
+                                        <article className="bg-[#1e293b] text-white rounded-2xl p-6 space-y-4 h-full flex flex-col relative">
+                                            <img className="absolute top-[17px]" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Animals/Rabbit%20Face.png" alt="Rabbit Face" width="7%" height="7%" />
                                             <div className="flex flex-col items-center text-center space-y-4">
-                                                <div className="relative w-24 h-24">
+                                                <div className="relative w-24 h-24 border-4 border-[#009CA6] rounded-full">
                                                     <Image 
                                                         src={item.image}
                                                         alt={item.author}
@@ -80,6 +81,8 @@ export function Testimonials() {
                                                 </div>
 
                                             </div>
+                                            
+                                
                                         </article>
                                     </div>
 
