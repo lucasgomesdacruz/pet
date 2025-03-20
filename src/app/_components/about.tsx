@@ -15,7 +15,7 @@ export function About() {
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
-                    <div className="relative" data-aos="fade-up-right" data-aos-delay="500">
+                    <div className="relative" data-aos="fade-down" data-aos-delay="500">
                         <div className="relative w-full h-[500px] rounded-3xl overflow-hidden bg-[#009CA6]">
                             <Image 
                                 src={about3Img}
@@ -32,7 +32,7 @@ export function About() {
                         </div>
                     </div>
                     
-                    <div className="space-y-6 mt-0" data-aos="fade-up-left" data-aos-delay="500">
+                    <div className="space-y-6 mt-0" data-aos="fade-down" data-aos-delay="500">
                         <h2 className="text-2xl font-bold flex items-center gap-1">Sobre <FaPaw /></h2>
                         <h2 className="text-4xl font-bold">Nós fornecemos os melhores serviços de cuidados com animais de estimação</h2>
 
